@@ -1,6 +1,6 @@
 # Automated mitosis detection in stained histopathological images using Faster R-CNN and stain techniques
 
-Please consider to take a look to the official MIDOG++ repository https://github.com/DeepMicroscopy/MIDOGpp.
+Please consider to take a look to the official MIDOG++ repository (https://github.com/DeepMicroscopy/MIDOGpp).
 
 ## Abstract
 
@@ -9,13 +9,24 @@ using Deep Learning (DL) techniques, particularly object detection models. We pr
 
 ## Usage
 
-For our experiments, we employed a Python 3.8.10 environment. If you consider to employ a higher Python version, be aware of warnings and posibble errors in the code developed.
+All the code developed is available in the **MIDOGpp-main** folder.
 
 ### 1. Download MIDOG++ dataset.
 
+Following the MIDOG++ instructions, you should use ``Setup.ipynb`` to download all the images of the dataset. The dataset comprises 65 GB of images, so the download process will take some time. Feel free to take a break and enjoy a coffee!
+
+Remember to place these images in the ``images`` folder.
+
 ### 2. Install requirements.
 
-### 3. Launch experiments
+For our experiments, we utilized a Python 3.8.10 environment. If you choose to use a higher version of Python, please be mindful of potential warnings and possible errors in the developed code.
+
+
+To install all the required dependencies for our code, you may use pip as follows:
+
+``pip install -r requirements.txt``.
+
+### 3. Launch experiments.
 
 
 ## Citation

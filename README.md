@@ -24,10 +24,17 @@ For our experiments, we utilized a Python 3.8.10 environment. If you choose to u
 
 To install all the required dependencies for our code, you may use pip as follows:
 
-``pip install -r requirements.txt``.
+``pip install -r requirements.txt``
 
 ### 3. Launch experiments.
 
+Before starting any experiment, it is essential to review and update the following elements:
+  - **Wandb project configuration**: Ensure that you update ``configs\all.yaml`` with your wandb group and project settings. Additionally, you must set your wandb API key in the training files for proper execution.
+  - **Code path**: The developed code uses  ``\app\MIDOGpp-main`` as the main project directory. Please review all files and update this path to match your custom directory as needed.
+    
+To start a experiment you only need to launch ``python MIDOGpp-main\main.py``. You can modify this file by commenting or uncommenting the relevant function calls within the main procedure.
+  - **Train a specific model**: Simply comment out the call to the current training model and uncomment the call for the desired model.
+  - **Single-Domain and Leave-One-Out experiments**: In the training files, you need to select or deselect the tumor type for the images to train your model.
 
 ## Citation
 If you use this repository in your research, please cite the following papers:
